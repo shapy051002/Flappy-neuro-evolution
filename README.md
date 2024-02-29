@@ -9,4 +9,4 @@ Mutation rate is set to 0.01.
 Fitness is designed such that the score as well as the distance between the nearest pipe and the bird is also taken into account.
 
 ## To see it work on your browser, go to:
-
+https://shapy051002.github.io/Flappy-neuro-evolution/
