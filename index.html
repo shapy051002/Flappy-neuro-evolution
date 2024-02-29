@@ -1,0 +1,42 @@
+---
+theme: jekyll-theme-slate
+---
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+  	Flappy Bird Game
+  </title>
+  <p>Created By: NishantKr18</p>
+
+  <script language="javascript" type="text/javascript" src="lib/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="lib/p5.dom.js"></script>
+  <script language="javascript" type="text/javascript" src="src/Bird.js"></script>
+  <script language="javascript" type="text/javascript" src="src/Game.js"></script>
+  <script language="javascript" type="text/javascript" src="src/Matrix.js"></script>
+  <script language="javascript" type="text/javascript" src="src/MyNN.js"></script>
+  <script language="javascript" type="text/javascript" src="src/population.js"></script>
+  <script language="javascript" type="text/javascript" src="src/pipe.js"></script>
+  <h2>NeuroEvolution of Flappy Bird</h2>
+  <p>Here, a population (an evolving collection of potential solutions that are explored in parallel) is subjected to a heuristic survival-of-the-fittest competition. Individuals that score higher on the fitness function (the objective function guiding search) are granted more offspring in the next generation (slightly perturbed copies of themselves or combinations of themselves with other individuals). In contrast, individuals that score poorly are removed from the population.</p>
+  <p>With the help of p5.js library, I created the following model.</p>
+  <p>A neural network is used to provide the outputs. Inputs to the network are vertical velocity of Bird, horizontal distance of bird from nearest pipe, x position of the nearest pipe and the two y positions of the nearest pipe.The neural network thus contains an input layer containing 5 nodes, 1 hidden layer containing 5 nodes and obviously 1 output- whether to jump or not.
+  (The biases are also present but are not shown in the Graphical Representation.)</p>
+  <p>
+  	On the right side of the game, a graphical visualization of the neural network can be seen. A range of colour can be seen from red to green where red denotes -1 and green denotes +1. These range of colours are actually weights connecting each node between two layers. 
+  </p>
+  <p>The Weights and Biases are the ones which are treated as DNA, whose fitness is calculated, selection is done(based on fitness),(no CrossOver) and is mutated. All the changable parameters can be accessed from the console.</p>
+  <p>
+  	I designed the game in 3 parts:-
+  	the training, the best Run and the Let Me run.
+  	The last part was made so that the user might be able to judge the difficulty of the game.
+  </p>
+ 
+</head>
+
+<body>
+	
+</body>
+
+</html>
